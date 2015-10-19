@@ -37,3 +37,14 @@ $(document).on("click", "button.close", function(){
   	$('#counter').html($("ul li").length);
   	};
 
+
+ function deleteBlogPost(context) {
+   console.log('context in blogpost: ', context);
+   // context is the button that was clicked
+	 var blogpostId = $(context).attr("button.close");
+	 console.log(blogpostId);
+	 var blogpostId = $(context).data().id;
+   $.ajax({
+     url: '/api/blogpost/' + blogpostId,
+     type: 'DELETE', });
+ });
