@@ -9,7 +9,7 @@ var blogpost = {text: $('#new-blog-post').val()};
 //adding a new post div aka submission but first checking if the form is empty
   $('#new-blog-post').submit(function (e) {
     e.preventDefault();
-    $.post("api/posts", $(this).serialize(), funtion(response){
+    $.post("api/posts", $(this).serialize(), function(response){
     	if($('#post-content').val().length>0){
 	  	var postContent = $("#post-content").val();
 	  	var newPost = '<li class="list-group-item alert">'+postContent+ deleteButton+'</li>';
@@ -22,6 +22,8 @@ var blogpost = {text: $('#new-blog-post').val()};
 		}
 
 	});
+
+});
 
 updateCounter();
 
