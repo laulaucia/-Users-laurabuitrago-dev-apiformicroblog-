@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Tiny Blog</title>
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- VENDOR SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- APPLICATION SCRIPTS -->
+    <script src="base.js"></script>
+  </head>
+  <body>
+    <h1>Laura's tiny blog</h1>
+    <div class="container">
+      <!-- spacing -->
+      <div class="row spacer">
+        <div class="col-md-6 col-md-offset-3">
+          <p># of posts: <span id="counter"></span></p>
+          <hr>
+        </div>
+      </div>
+      <!-- Tiny blog input -->
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3 input">
+          <form id="new-blog-post"> 
+            <div class="form-group">
+              <label>post something</label>
+              <textarea name="post a blog" id="post-content" cols="30" rows="3" class="form-control"></textarea>
+            </div>
+            <div class="button">
+             <button type="submit" class="btn btn-primary btn-sm">Post!</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- spacing -->
+      <div class="row spacer">
+        <div class="col-md-6 col-md-offset-3">
+          <hr>
+        </div>
+      </div>
+      <!-- post area -->
+      <div class="col-md-6 col-md-offset-3">
+        <div class="row">
+            <ul class="list-group" id="posts">
+            <li class="list-group-item alert">how is everyone today?<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button></li>
+            <li class="list-group-item alert">Hello world!<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
