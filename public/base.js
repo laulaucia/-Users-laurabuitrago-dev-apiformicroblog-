@@ -41,10 +41,9 @@ $(document).on("click", "button.close", function(){
  function deleteBlogPost(context) {
    console.log('context in blogpost: ', context);
    // context is the button that was clicked
-	 var blogpostId = $(context).attr("button.close");
+	 var blogpostId = $(context).attr(".list-group-item alert");
 	 console.log(blogpostId);
-	 var blogpostId = $(context).data().id;
    $.ajax({
      url: '/api/blogpost/' + blogpostId,
      type: 'DELETE', });
- });
+}

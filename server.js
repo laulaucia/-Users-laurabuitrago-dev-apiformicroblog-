@@ -15,9 +15,6 @@ app.use(bodyParser.json());
 
 app.use(express.static('public'));
 
-app.get('/', function (request, response) {
-  response.render('index', { title: 'The index page!' });
-});
 
 var server = app.listen(3000, function () {
   var host = server.address().address;
@@ -55,6 +52,15 @@ app.get('/api/post', function(req,res) {
 		res.send(Posts);
 	});
 });
+
+//ROUTES
+
+app.get('/', function (request, response) {
+  response.render('index', { title: 'The index page!' });
+});
+
+
+app.get("/api/blogposts")
 
 
 
