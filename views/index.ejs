@@ -36,7 +36,7 @@
               <textarea name="post a blog" id="post-content" cols="30" rows="3" class="form-control"></textarea>
             </div>
             <div class="button">
-             <button type="submit" class="btn btn-primary btn-sm">Post!</button>
+             <button blogpost-id="<%=blogpost.id %>" type="submit" class="btn btn-primary btn-sm">Post!</button>
             </div>
           </form>
         </div>
@@ -50,7 +50,10 @@
       <!-- post area -->
       <div class="col-md-6 col-md-offset-3">
         <div class="row">
-            <ul class="list-group" id="posts"> </ul>
+            <ul class="list-group" id="posts"> 
+  
+
+            </ul>
         </div>
       </div>
     </div>
