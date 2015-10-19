@@ -1,0 +1,45 @@
+body {
+  color: #fff;
+  font-family: helvetica, cursive, sans-serif;
+  background-image: url("milkyway.png");
+  font-family: helvetica, cursive, sans-serif;
+  font-size: 2em;
+}
+
+h1 {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 5em;
+  font-family: "hello script", cursive, sans-serif;
+}
+
+
+label {
+
+	text-align: center;
+	
+
+}
+
+p {
+	text-align: center;
+	color: lightskyblue;
+	font-size: 2em;
+	
+}
+
+
+/*class styles*/ 
+
+
+.list-group-item{
+	border: black dotted 2px;
+	color: #000;
+
+}
+
+.input {
+	position: relative;
+	text-align: center;
+}
+

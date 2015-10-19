@@ -4,8 +4,8 @@ var app = express();
 
 app.set('view engine', 'ejs');  
 
-app.get('/', function (req, res) {
-  res.send('Hello World!');
+app.get('/', function (request, response) {
+  response.render('index', { title: 'The index page!' });
 });
 
 var server = app.listen(3000, function () {
